@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { Component } from "react";
+// import "./App.css";
+// import Filter from "./Filter";
 
-function App() {
+// export class App extends Component {
+//   state = {
+//     names: [
+//       "Abhay",
+//       "Ajay",
+//       "Axay",
+//       "Bhanu",
+//       "Bhavya",
+//       "Bhaskar",
+//       "cinu",
+//       "cse",
+//       "cbe",
+//     ],
+//   };
+
+//   onChangeHandler = (e) => {
+//     // this.setState({ text: "" });
+//     console.log(e.target.value);
+//   };
+//   render() {
+//     return (
+//       <div>
+//         <h1>My Contacts</h1>
+//         <input
+//           type="text"
+//           onChange={this.onChangeHandler}
+//           // value={this.state.names}
+//         />
+//         <div>
+//           {this.state.names.map((person) => (
+//             <li>
+//               <span>{person}</span>
+//             </li>
+//           ))}
+//         </div>
+//         <Filter />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+import React from "react";
+import Filter from "./Filter";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Filter />
     </div>
   );
 }
-
-export default App;
